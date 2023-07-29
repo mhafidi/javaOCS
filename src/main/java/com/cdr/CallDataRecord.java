@@ -84,6 +84,158 @@ public class CallDataRecord {
         return startTime;
     }
 
+    public String getCallId() {
+        return callId;
+    }
+
+    public void setCallId(String callId) {
+        this.callId = callId;
+    }
+
+    public long getDuration() {
+        return duration;
+    }
+
+    public void setDuration(long duration) {
+        this.duration = duration;
+    }
+
+    public String getCallingPartyNumber() {
+        return callingPartyNumber;
+    }
+
+    public void setCallingPartyNumber(String callingPartyNumber) {
+        this.callingPartyNumber = callingPartyNumber;
+    }
+
+    public String getCalledPartyNumber() {
+        return calledPartyNumber;
+    }
+
+    public void setCalledPartyNumber(String calledPartyNumber) {
+        this.calledPartyNumber = calledPartyNumber;
+    }
+
+    public String getCallingPartyLocation() {
+        return callingPartyLocation;
+    }
+
+    public void setCallingPartyLocation(String callingPartyLocation) {
+        this.callingPartyLocation = callingPartyLocation;
+    }
+
+    public String getCalledPartyLocation() {
+        return calledPartyLocation;
+    }
+
+    public void setCalledPartyLocation(String calledPartyLocation) {
+        this.calledPartyLocation = calledPartyLocation;
+    }
+
+    public String getServiceType() {
+        return serviceType;
+    }
+
+    public void setServiceType(String serviceType) {
+        this.serviceType = serviceType;
+    }
+
+    public String getServiceCode() {
+        return serviceCode;
+    }
+
+    public void setServiceCode(String serviceCode) {
+        this.serviceCode = serviceCode;
+    }
+
+    public int getQosMetrics() {
+        return qosMetrics;
+    }
+
+    public void setQosMetrics(int qosMetrics) {
+        this.qosMetrics = qosMetrics;
+    }
+
+    public String getSupplementaryServiceCodes() {
+        return supplementaryServiceCodes;
+    }
+
+    public void setSupplementaryServiceCodes(String supplementaryServiceCodes) {
+        this.supplementaryServiceCodes = supplementaryServiceCodes;
+    }
+
+    public long getChargeableDuration() {
+        return chargeableDuration;
+    }
+
+    public void setChargeableDuration(long chargeableDuration) {
+        this.chargeableDuration = chargeableDuration;
+    }
+
+    public String getChargingParty() {
+        return chargingParty;
+    }
+
+    public void setChargingParty(String chargingParty) {
+        this.chargingParty = chargingParty;
+    }
+
+    public String getTariffInformation() {
+        return tariffInformation;
+    }
+
+    public void setTariffInformation(String tariffInformation) {
+        this.tariffInformation = tariffInformation;
+    }
+
+    public String getBearerType() {
+        return bearerType;
+    }
+
+    public void setBearerType(String bearerType) {
+        this.bearerType = bearerType;
+    }
+
+    public String getBearerId() {
+        return bearerId;
+    }
+
+    public void setBearerId(String bearerId) {
+        this.bearerId = bearerId;
+    }
+
+    public String getImsi() {
+        return imsi;
+    }
+
+    public void setImsi(String imsi) {
+        this.imsi = imsi;
+    }
+
+    public String getImei() {
+        return imei;
+    }
+
+    public void setImei(String imei) {
+        this.imei = imei;
+    }
+
+    public String getCallResult() {
+        return callResult;
+    }
+
+    public void setCallResult(String callResult) {
+        this.callResult = callResult;
+    }
+
+    public String getTerminationCause() {
+        return terminationCause;
+    }
+
+    public void setTerminationCause(String terminationCause) {
+        this.terminationCause = terminationCause;
+    }
+
     public void setStartTime(ZonedDateTime startTime) {
         this.startTime = startTime;
     }
