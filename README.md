@@ -4,28 +4,34 @@ An Online Charging System (OCS) is a critical component in telecommunication net
 ###### 1-Service Control Function (SCF):
 
 Responsible for handling service-specific charging logic.
-Attributes:
-Service Identifier: Unique identifier for the specific service being used.
-Service Type: Type of service (e.g., voice, data, messaging).
-Charging Parameters: Specific charging parameters for the service.
+ 
+ - **Attributes:**
+
+    - **Service Identifier:** Unique identifier for the specific service being used.
+
+    - **Service Type:** Type of service (e.g., voice, data, messaging).
+    - **Charging Parameters:** Specific charging parameters for the service.
 ###### 2-Rating Function (RF):
 
 Calculates the charges based on the service usage and charging logic.
-Attributes:
-Tariff Information: Information about the applicable pricing plans and tariffs.
-Charging Rules: Rules governing how charges are calculated for different services.
+
+- Attributes:
+    - Tariff Information: Information about the applicable pricing plans and tariffs.
+    - Charging Rules: Rules governing how charges are calculated for different services.
 ###### 3-Policy Control Function (PCF):
 
 Enforces policies related to charging, access control, and quality of service (QoS).
-Attributes:
-Policy Rules: Rules defining the charging behavior and access control.
+
+- Attributes:
+    - Policy Rules: Rules defining the charging behavior and access control.
 ###### 4-Account Balance Management (ABM):
 
 Manages subscriber account balances and updates them in real-time during service usage.
-Attributes:
-Subscriber ID: Unique identifier for the subscriber account.
-Balance: Current account balance for the subscriber.
-Credit Limit: Maximum allowed balance for a subscriber.
+
+- Attributes:
+    - **Subscriber ID:** Unique identifier for the subscriber account.
+    - **Balance:** Current account balance for the subscriber.
+    - **Credit Limit:** Maximum allowed balance for a subscriber.
 ###### 5-Online Charging Data Record (OCDR) Collector:
 
 Collects and processes real-time charging data records from various network elements.
