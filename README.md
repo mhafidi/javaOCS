@@ -15,15 +15,15 @@ Responsible for handling service-specific charging logic.
 
 Calculates the charges based on the service usage and charging logic.
 
-- Attributes:
-    - Tariff Information: Information about the applicable pricing plans and tariffs.
-    - Charging Rules: Rules governing how charges are calculated for different services.
+- **Attributes**:
+    - **Tariff Information**: Information about the applicable pricing plans and tariffs.
+    - **Charging Rules**: Rules governing how charges are calculated for different services.
 ###### 3-Policy Control Function (PCF):
 
 Enforces policies related to charging, access control, and quality of service (QoS).
 
-- Attributes:
-    - Policy Rules: Rules defining the charging behavior and access control.
+- **Attributes**:
+    - **Policy Rules**: Rules defining the charging behavior and access control.
 ###### 4-Account Balance Management (ABM):
 
 Manages subscriber account balances and updates them in real-time during service usage.
@@ -35,10 +35,13 @@ Manages subscriber account balances and updates them in real-time during service
 ###### 5-Online Charging Data Record (OCDR) Collector:
 
 Collects and processes real-time charging data records from various network elements.
-Attributes:
-Call ID / Session ID: Unique identifier for each communication session.
-Start Time / End Time: Timestamps for session start and end.
-Service Information: Details about the service used.
+
+- **Attributes**:
+
+  - **Call ID / Session ID**: Unique identifier for each communication session.
+  - **Start Time / End Time**: Timestamps for session start and end.
+  
+  - **Service Information**: Details about the service used.
 ###### 6-Online Charging Data Record (OCDR) Database:
 
 Stores the collected OCDRs for later processing and auditing.
