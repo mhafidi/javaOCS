@@ -1,5 +1,7 @@
 package com.pcf;
 
+import com.pcf.context.UeContext;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -47,18 +49,18 @@ public class PCFContext {
         // Fields and methods for the supported feature representation go here...
     }
 
-    private static class UeContext {
-        private String supi;
-        private Map<String, UeSmPolicyData> smPolicyData;
-        private Map<String, UeAMPolicyData> amPolicyData;
-        private int polAssociationIDGenerator;
-        private Map<String, String> relatedPccRuleIds;
-        private Map<String, String> pccRuleIdMapToCompId;
-        private Map<String, AfEvent> events;
-        private String eventUri;
-
-        // Constructors and other methods go here...
-    }
+//    private static class UeContext {
+//        private String supi;
+//        private Map<String, UeSmPolicyData> smPolicyData;
+//        private Map<String, UeAMPolicyData> amPolicyData;
+//        private int polAssociationIDGenerator;
+//        private Map<String, String> relatedPccRuleIds;
+//        private Map<String, String> pccRuleIdMapToCompId;
+//        private Map<String, AfEvent> events;
+//        private String eventUri;
+//
+//        // Constructors and other methods go here...
+//    }
 
     private static class BdtPolicy {
         // Fields and methods for BdtPolicy representation go here...
