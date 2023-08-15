@@ -13,6 +13,13 @@
             <url>https://opensource.org/licenses/MIT</url>
         </license>
     </licenses>
+    <dependencies>
+        <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-core</artifactId>
+            <version>7.62.0.Final</version> <!-- Use the appropriate version -->
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>

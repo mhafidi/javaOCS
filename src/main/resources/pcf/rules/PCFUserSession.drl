@@ -1,0 +1,34 @@
+package pcf.rules
+
+
+import com.pcf.user.UserSession
+
+rule "Apply QoS for Premium Users"
+when
+    $session: UserSession(subscriptionPlan == "Premium")
+then
+    $session.setQoS("Guaranteed");
+    modify($session) {
+        setQoS("Guaranteed")
+    }
+end
+
+rule "Apply QoS for Standard Users"
+when
+    $session: UserSession(subscriptionPlan == "Standard")
+then
+    $session.setQoS("BestEffort");
+    modify($session) {
+        setQoS("BestEffort")
+    }
+end
+
+rule "Apply Data Limit for Free Users"
+when
+    $session: UserSession(subscriptionPlan == "Free", dataUsage > 500MB)
+then
+    $session.setSessionState("Limited");
+    modify($session) {
+        setSessionState("Limited")
+    }
+end
