@@ -1,7 +1,7 @@
 package com.utils;
 public class QoS {
     // Type of QoS (e.g., "guaranteed", "best_effort", "limited")
-    private String qosType;
+    private QoSType qosType;
 
     // Priority level for the QoS (higher values indicate higher priority)
     private int priority;
@@ -25,7 +25,7 @@ public class QoS {
     private String security;
 
     // Constructor to initialize QoS attributes
-    public QoS(String qosType, int priority, double dataRateMbps, int latencyMs,
+    public QoS(QoSType qosType, int priority, double dataRateMbps, int latencyMs,
                double packetLossPercentage, int jitterMs, String reliability, String security) {
         this.qosType = qosType;
         this.priority = priority;
@@ -39,7 +39,7 @@ public class QoS {
 
     // Getters and Setters for QoS attributes
 
-    public String getQosType() {
+    public QoSType getQosType() {
         return qosType;
     }
 
