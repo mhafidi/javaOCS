@@ -1,6 +1,15 @@
 package com.utils;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class QoS {
     // Type of QoS (e.g., "guaranteed", "best_effort", "limited")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private QoSType qosType;
 
     // Priority level for the QoS (higher values indicate higher priority)
